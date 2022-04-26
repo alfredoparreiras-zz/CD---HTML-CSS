@@ -4,163 +4,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Resources/CSS/styles.css">
     <title>HTML & CSS CheatSheet</title>
 </head>
 <body>
-    <h1>HTML & CSS CheatSheet</h1>
 
-    <section class="html">
-        <table border="1px">
-            <thead>
-                <th scope="col">TAG</th>
-                <th scope="col">Description</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&ltHTML&gt</td>
-                    <td>Creates an HTML document.</td>
-                </tr>
-                <tr>
-                    <td>&lt!DOCTYPE html&gt</td>
-                    <td>Determine to browser what kind of document it is.</td>
-                </tr>
-                <tr>
-                    <td>&lthead&gt</td>
-                    <td>Sets off the title & other info that isn't displayed </td>
-                </tr>
-                <tr>
-                    <td>&ltbody&gt</td>
-                    <td>Sets off the visible portion of the document</td>
-                </tr>
-                <tr>
-                    <td>&lttitler&gt</td>
-                    <td>puts name of the document in the title bar; when
-                        bookmarking pages, this is what is bookmarked.</td>
-                </tr>
-                <tr>
-                    <td>&ltul&gt</td>
-                    <td>Creates an unordered list.</td>
-                </tr>
-                <tr>
-                    <td>&ltp&gt</td>
-                    <td>Creates a paragraph.</td>
-                </tr>
-                <tr>
-                    <td>&ltimg src="url"&gt</td>
-                    <td>Adds image; it is a separate file located at the URL</td>
-                </tr>
-                <tr>
-                    <td>&lth1&gt</td>
-                    <td>Creates headlines -- H1=largest, H6=smallest</td>
-                </tr>    
-                <td>&ltbr&gt</td>
-                <td>Inserts a line break (carriage return)</td>
-                </tr>                
-                <tr>
-                    <td>&ltform&gt</td>
-                    <td>Defines a form</td>
-                </tr>                
-                <tr>
-                    <td>&ltoption&gt</td>
-                    <td>Sets off each menu item</td>
-                </tr>                
-                <tr>
-                    <td>&lttable&gt</td>
-                    <td>Creates a table</td>
-                </tr>                
-                <tr>
-                    <td>&lttr&gt</td>
-                    <td>Sets off each row in a table</td>
-                </tr>                
-                <tr>
-                    <td>&lttd&gt</td>
-                    <td>Sets off each cell in a row</td>
-                </tr>                
-                <tr>
-                    <td>&lth1&gt</td>
-                    <td>Sets off the table header (a normal cell with bold,
-                        centered text)</td>
-                </tr>             
-            </tbody>
-        </table>
-        <p>Source: <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">Stanford</a> </p>
-   
-    </section>
-    <section class="css">
-        <table border="1px">
-            <thead>
-                <th scope="col">Property</th>
-                <th scope="col">Description</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>background</td>
-                    <td>Will sets all background styles properties</td>
-                </tr>
-                <tr>
-                    <td>align-content</td>
-                    <td>Will sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis</td>
-                </tr>
-                <tr>
-                    <td>border</td>
-                    <td>Will sets an element's border</td>
-                </tr>
-                <tr>
-                    <td>box-sizing</td>
-                    <td>Will sets how the total width and height of an element is calculated</td>
-                </tr>
-                <tr>
-                    <td>color</td>
-                    <td>Will sets the foreground color value of an element text</td>
-                </tr>
-                <tr>
-                    <td>cursor</td>
-                    <td>Will sets the mouse cursor, if any, to show when the mouse pointer is over an element</td>
-                </tr>
-                <tr>
-                    <td>flex</td>
-                    <td>Will sets how a flex item will grow or shrink to fit the space avaiable in its flex container</td>
-                </tr>
-                <tr>
-                    <td>font-family</td>
-                    <td>Will specifies a prioritized list of one and others (fallbacks) font family names</td>
-                </tr>
-                <tr>
-                    <td>grid</td>
-                    <td>Is a shorthand property that sets all of the explicity and implicit grid properties in a single declaration</td>
-                </tr>
-                <tr>
-                    <td>height</td>
-                    <td>Will sets the height of an element</td>
-                </tr>
-                <tr>
-                    <td>display</td>
-                    <td>The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.</td>
-                </tr>
-                <tr>
-                    <td>overflow</td>
-                    <td>The overflow CSS shorthand property sets the desired behavior for an element's overflow — i.e. when an element's content is too big to fit in its block formatting context — in both directions.</td>
-                </tr>
-                <tr>
-                    <td>padding</td>
-                    <td>The padding CSS shorthand property sets the padding area on all four sides of an element at once.</td>
-                </tr>
-                <tr>
-                    <td>scroll-behavior</td>
-                    <td>The scroll-behavior CSS property sets the behavior for a scrolling box when scrolling is triggered by the navigation or CSSOM scrolling APIs.</td>
-                </tr>
-                <tr>
-                    <td>text-decoration</td>
-                    <td>The text-decoration shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, text-decoration-style, and the newer text-decoration-thickness property.</td>
-                </tr>
-                <tr>
-                    <td>transition</td>
-                    <td>The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay.</td>
-                </tr>
-               
-            </tbody>
-        </table>
+    <header>
+        <h1>HTML & CSS CheatSheet</h1>
+    </header>
 
+    <section class="tables">
+        <section class="html">
+            <table class="html-table">
+                <thead>
+                    <th scope="col" class="first-col">TAG</th>
+                    <th scope="col">Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="first-col">&ltHTML&gt</td>
+                        <td>Creates an HTML document.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">&lt!DOCTYPE html&gt</td>
+                        <td>Determine to browser what kind of document it is.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">&lthead&gt</td>
+                        <td>Sets off the title & other info that isn't displayed </td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">&ltbody&gt</td>
+                        <td>Sets off the visible portion of the document</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">&lttitle&gt</td>
+                        <td>Puts name of the document in the title bar; when
+                            bookmarking pages, this is what is bookmarked.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">&ltul&gt</td>
+                        <td>Creates an unordered list.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">&ltp&gt</td>
+                        <td>Creates a paragraph.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">&ltimg src="url"&gt</td>
+                        <td>Adds image; it is a separate file located at the URL</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">&lth1&gt</td>
+                        <td>Creates headlines -- H1=largest, H6=smallest</td>
+                    </tr>    
+                        <td class="first-col">&ltbr&gt</td>
+                        <td>Inserts a line break (carriage return)</td>
+                    </tr>                
+                    <tr>
+                        <td class="first-col">&ltform&gt</td>
+                        <td>Defines a form</td>
+                    </tr>                
+                    <tr>
+                        <td class="first-col">&ltoption&gt</td>
+                        <td>Sets off each menu item</td>
+                    </tr>                
+                    <tr>
+                        <td class="first-col">&lttable&gt</td>
+                        <td>Creates a table</td>
+                    </tr>                
+                    <tr>
+                        <td class="first-col">&lttr&gt</td>
+                        <td>Sets off each row in a table</td>
+                    </tr>                
+                    <tr>
+                        <td class="first-col">&lttd&gt</td>
+                        <td>Sets off each cell in a row</td>
+                    </tr>                
+                    <tr>
+                        <td class="first-col">&lth1&gt</td>
+                        <td>Sets off the table header (a normal cell with bold,
+                            centered text)</td>
+                    </tr>             
+                </tbody>
+            </table>
+            <p>Source: <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">Stanford</a></p>
+    
+        </section>
+        <section class="css">
+            <table class="css-table">
+                <thead>
+                    <th scope="col" class="first-col">Property</th>
+                    <th scope="col">Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="first-col">background</td>
+                        <td>Will sets all background styles properties</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">align-content</td>
+                        <td>Will sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">border</td>
+                        <td>Will sets an element's border</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">box-sizing</td>
+                        <td>Will sets how the total width and height of an element is calculated</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">color</td>
+                        <td>Will sets the foreground color value of an element text</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">cursor</td>
+                        <td>Will sets the mouse cursor, if any, to show when the mouse pointer is over an element</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">flex</td>
+                        <td>Will sets how a flex item will grow or shrink to fit the space avaiable in its flex container</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">font-family</td>
+                        <td>Will specifies a prioritized list of one and others (fallbacks) font family names</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">grid</td>
+                        <td>Is a shorthand property that sets all of the explicity and implicit grid properties in a single declaration</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">height</td>
+                        <td>Will sets the height of an element</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">display</td>
+                        <td>The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">overflow</td>
+                        <td>The overflow CSS shorthand property sets the desired behavior for an element's overflow — i.e. when an element's content is too big to fit in its block formatting context — in both directions.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">padding</td>
+                        <td>The padding CSS shorthand property sets the padding area on all four sides of an element at once.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">scroll-behavior</td>
+                        <td>The scroll-behavior CSS property sets the behavior for a scrolling box when scrolling is triggered by the navigation or CSSOM scrolling APIs.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">text-decoration</td>
+                        <td>The text-decoration shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, text-decoration-style, and the newer text-decoration-thickness property.</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">transition</td>
+                        <td>The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Source: <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">MDN</a></p>
+        </section>
     </section>
 </body>
 </html>
