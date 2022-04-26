@@ -62,7 +62,7 @@ td {
 
 .first-col { 
     text-align: center;
-    border-right: solid 2px #bdbbb0;; 
+    border-right: dotted 2px #bdbbb0;; 
 }
 
 tr:hover { 
