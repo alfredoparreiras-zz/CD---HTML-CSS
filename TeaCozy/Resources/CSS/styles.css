@@ -66,6 +66,7 @@ header a {
 .month-tea { 
     background-color: black;
     height: 600px;
+    width: 100%;
     position: relative;
     top: 69px;
     display: flex;
@@ -97,7 +98,7 @@ header a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
+    width: 100%;
 }
 
 figcaption { 
