@@ -1,0 +1,281 @@
+/* Universal Styles */
+
+@media only screen and (max-width: 1024px) {
+    .main-content {
+      top: 5.1rem;
+    }
+  }
+
+@media only screen and (max-width: 480px){ 
+    .main-content {
+        top: 2.9rem;
+      }
+}
+
+  /* Header Section */
+
+  @media only screen and (max-width: 700px){
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0; 
+    }
+  
+    header .mobile .button {
+      padding: .1875rem .5rem;
+      background-color: #9dc20b;
+      line-height: 1.6;
+      color: white;
+      position: relative;
+      top: -2px; /* TODO: Há outra forma melhor de ajuste? */
+      border-radius: 4px;
+    }
+  }
+
+  @media only screen and (min-width: 701px) and (max-width: 1024px) { 
+    header .mobile {
+        display: none;
+    }
+
+    #desktop-button {
+      display: block;
+      padding: .1875rem .5rem;
+      background-color: #9dc20b;
+      line-height: 1.6;
+      color: white;
+      position: relative;
+      top: -2px; /* TODO: Há outra forma melhor de ajuste? */
+      border-radius: 4px;
+    }
+  }
+
+  /* Sign-Up Section */
+
+
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #sign-up-section {
+      align-items: center;
+      justify-content: center;
+      height: 28rem;
+    }
+  
+    #sign-up-cta {
+      position: static;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      border: none;
+    }
+  
+    #sign-up-cta .content {
+      margin-top: 0;
+    }
+  
+    #sign-up-cta .email {
+      display: none;
+    }
+  
+    #sign-up-cta h1 {
+      font-size: 3.125rem;
+    }
+  
+    #sign-up-cta h2 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #sign-up-section { 
+        background-position: -180px;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+    }
+
+    #sign-up-cta .cursive { 
+        font-size: 2.25rem;
+    }
+
+    #sign-up-cta .striking { 
+        font-size: 2rem;
+    }
+
+     #sign-up-cta { 
+        margin: 0;
+        padding: 0;
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        border: none;
+    }
+
+    .main-content { 
+      background-size: auto;
+      overflow: scroll;
+    }
+
+    #sign-up-cta .email {
+        display: none;
+    }
+  }
+  
+  /* Feature Section */
+
+  @media only screen and (min-width: 701px) and (max-width: 1024px) {
+    .feature h2 {
+      font-size: 1.125rem;
+      line-height: 1.3;
+      font-weight: normal;
+    }
+  
+    .feature h3 {
+      font-size: .875rem;
+      line-height: 1.4;
+    }
+  }
+  
+  @media only screen and (max-width: 480px){
+    #features-section {
+      flex-flow: column;
+      padding: 0;
+    }
+    
+    .feature:first-child { 
+        background-color: #D4D5D6;
+        padding: 16px 0 30px 0; 
+        margin: 0;
+    }
+
+    .feature:nth-child(2) {
+        margin: 0;
+    }
+
+   
+    .feature h2 { 
+        color: #636364; 
+        font-size: 1.125rem; 
+    }
+
+    .feature h3 { 
+        font-size: 0.875rem;
+    }
+  }
+
+  /* Filter Section */
+
+  @media only screen and (min-width: 701px) and (max-width: 1024px){ 
+    #filters-section {
+        padding: 1.5rem 0 0 0;
+    }
+
+    #filters-section .content { 
+        margin: 2.5rem auto;
+    }
+
+    #filters-section .images-container { 
+        padding: 0;
+    }
+
+    #filters-section .content h3 { 
+        margin-top: 0.350rem;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    #filters-section {
+      padding: 1.5rem 0 0 0;
+    }
+  
+    #filters-section .content {
+      margin-bottom: 1rem;
+    }
+
+    .content.center { 
+        margin: 0 auto;
+    }
+  
+    #filters-section .content h2 {
+      padding-bottom: .625rem;
+      font-size: 1.125rem;
+      line-height: 1.3;
+      font-weight: normal;
+    }
+  
+    #filters-section .content h3 {
+      font-size: .875rem;
+      line-height: 1.4;
+    }
+  
+    #filters-section .images-container {
+      padding: 0;
+    }
+  
+    #filters-section .extra {
+      display: none;
+    }
+  }
+
+  /* Quote Section */
+
+  @media only screen and (min-width: 701px) and (max-width: 1024px) { 
+    #quotes-section .content { 
+        display: inline-flex;
+    }
+
+    #quotes-section .quote { 
+        width: 75%;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    #quotes-section .quote-citation {
+        height: 1.975rem;
+        position: relative;
+        top: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    #quotes-section content {
+      padding: 1.875rem .625rem;
+    }
+  
+    #quotes-section quote {
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+  
+    #quotes-section quote-citation {
+      display: block;
+      padding-top: 1rem;
+      margin: auto;
+    }
+  }
+
+  /* Footer Section */
+
+  @media only screen and (max-width: 480px) {
+    footer .content {
+      font-size: .625rem;
+    }
+  }
+  
