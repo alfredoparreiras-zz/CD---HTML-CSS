@@ -77,11 +77,43 @@ header img {
     color: black;
 }
 
+#mobile-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 800px){ 
+    #menu { 
+        display: none;
+    }
+
+    #mobile-menu{ 
+        height: 5rem;
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        top: -2rem;
+    }
+
+    #mobile-menu ul { 
+        display: flex;
+        width: 80%;
+        padding: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #mobile-menu img { 
+        min-width: 2rem;
+        max-width: 4.5rem;
+    }
+}
+
 /* Home Section */
 
 .home { 
     height: 100vh;
-    background-image: url("https://cdn11.bigcommerce.com/s-euzanzrb/images/stencil/1280x1280/products/1268/2264/pandora_s_box_by_kevincu__56690.1439509298.jpg?c=2"); /* TODO: porque nao consigo colocar do /media ? */
+    background-image: url('/Resources/Media/pandora-box-bg.jpg'); /* TODO: porque nao consigo colocar do /media ? */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
@@ -97,6 +129,19 @@ header img {
     color: white;
     width: 100%;
     text-align: center;
+}
+
+@media only screen and (max-width: 800px){ 
+
+    .home{ 
+        background-size: contain;
+        height: 95vh;
+    }
+
+    .home h1{ 
+        font-size: 5rem;
+        color: var(--second-color)
+    }
 }
 
 /* Events Section */
@@ -153,6 +198,44 @@ header img {
     font-weight: 500;
 }
 
+@media only screen and (max-width: 800px){
+    .events { 
+        height: 220vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+    }
+
+    .event-div { 
+ 
+    }
+
+    .main-event {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .event-photo{ 
+        min-width: 4rem;
+        max-width: 16rem;
+    }
+
+    .last-button{ 
+        background-color: var(--txt-color)
+    
+    }
+ }
+
+ @media only screen and (min-width: 800px) and (max-width: 1200px){
+    .events { 
+        height: 200vh;
+    }
+
+    .event-name { 
+        font-size: 3rem;
+    }
+}
 /* History Section */
 
 .history { 
@@ -186,6 +269,62 @@ header img {
     max-height: 700px;
     min-height: 300px;
 }
+
+@media only screen and (max-width: 800px){
+    .history { 
+        flex-flow: column nowrap;
+        margin: 3.5rem 0;
+    }
+    
+    .history img { 
+        display: none;
+    }
+
+    .history h1 { 
+        position: relative;
+        text-align: center;
+        right: 0;
+    }
+
+    .history p { 
+        width: 90%;
+        padding: 2rem;
+        text-align: center;
+        right: 0;
+        float: none;
+
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    .history { 
+        height: 120vh;
+        flex-flow: column-reverse nowrap;
+        margin: 4.5rem 0;
+        justify-content: center;
+    }
+    
+    .history img { 
+        width: 60%;
+        padding: 1rem;
+    }
+    .history h1 { 
+        position: relative;
+        text-align: center;
+        right: 0;
+    }
+
+    .history p { 
+        width: 90%;
+        padding: 2rem;
+        text-align: center;
+        right: 0;
+        float: none;
+
+    }
+}
+
+
 
 /* Board Section */
 
@@ -235,6 +374,50 @@ header img {
     margin-top: -.5rem;
 }
 
+@media only screen and (max-width: 800px){
+    
+    .board h1 { 
+        color: var(--txt-color);
+    }
+
+    .board-team { 
+        flex-direction: column;
+    }
+    
+    .board-member-photo {
+        max-width: 18rem;
+        min-width: 13rem;
+        max-height: 18rem;
+        min-height: 13rem;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    .board h1 { 
+        color: var(--txt-color);
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .board{
+
+
+    }
+
+    .board-team { 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr)
+    }
+    
+    .board-member-photo {
+        max-width: 18rem;
+        min-width: 13rem;
+        max-height: 18rem;
+        min-height: 13rem;
+    }
+}
+
 /* Contact Section*/
 
 .contact { 
@@ -278,7 +461,13 @@ input {
     text-align: center;
     position: relative;
     left: 35%;
-  
+}
+
+@media only screen and (max-width: 800px){
+    .contact{
+        height: 65vh;
+    }
+   
 }
 
 /* Footer Section */
@@ -293,4 +482,11 @@ footer p {
 
 footer a { 
     color: var(--second-color);
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    footer p{ 
+        position: relative;
+        top: 1rem;
+    }
 }
